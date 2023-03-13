@@ -1,0 +1,20 @@
+@import "../../mixins";
+
+.add-video {
+   width: 100%;
+   @include d-flex(column, flex-start, center);
+   padding: 2rem;
+   padding-top: 4rem;
+   gap: 2rem;
+
+   .inputs {
+      @include d-flex(column, flex-start, center);
+      width: 400px;
+      max-width: 100%;
+      gap: 2rem;
+
+      * {
+        width: 100%;
+      }
+   }
+}

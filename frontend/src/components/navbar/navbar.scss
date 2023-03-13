@@ -1,0 +1,16 @@
+@import "../../mixins";
+
+.navbar {
+    width: 100%;
+    height: 50px;
+    @include d-flex(row, flex-start, center);
+    background-color: rgb(2,69,145);
+    padding-left: 2rem;
+    color: #fff;
+
+    span {
+        cursor: pointer;
+        
+    }
+
+}

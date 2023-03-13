@@ -1,0 +1,14 @@
+@mixin d-flex($direction, $justify, $align) {
+   display: flex;
+   flex-direction: $direction;
+   justify-content: $justify;
+   align-items: $align;
+}
+
+@mixin border1 {
+   border: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+@mixin shadow1 {
+   box-shadow: 0 0 50px 1px rgba(0, 0, 0, 0.2);
+}

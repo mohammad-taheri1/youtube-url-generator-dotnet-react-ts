@@ -1,0 +1,71 @@
+@import "../../mixins";
+
+.home {
+   width: 100%;
+   @include d-flex(column, flex-start, center);
+   padding: 2rem;
+   padding-top: 4rem;
+   gap: 2rem;
+
+   .heading {
+      width: 100%;
+      @include d-flex(row, space-between, center);
+
+      svg {
+         font-size: 40px;
+      }
+   }
+
+   .cards {
+      @include border1();
+      @include shadow1();
+      @include d-flex(column, space-between, center);
+      margin: 0.6rem 0;
+      padding: 0.6rem 1.2rem;
+      width: 100%;
+      border-radius: 12px;
+
+      .no-video {
+         padding: 4rem;
+      }
+
+      .card {
+         @include border1();
+         @include shadow1();
+         @include d-flex(row, space-between, center);
+         margin: 0.6rem 0;
+         padding: 0.6rem 1.2rem;
+         width: 100%;
+         border-radius: 32px;
+
+         .left {
+            .time {
+               margin-left: 1rem;
+               font-size: 14px;
+               color: #0000ff;
+            }
+
+            .url {
+               margin-top: 6px;
+               span {
+                  margin-top: 0.5rem;
+                  font-size: 14px;
+                  background-color: #b4b4b4;
+                  padding: 3px 6px;
+                  border-radius: 50px;
+               }
+            }
+         }
+         .right {
+            .btns {
+               .edit-btn {
+                  color: rgb(140, 140, 17);
+               }
+               .delete-btn {
+                  color: red;
+               }
+            }
+         }
+      }
+   }
+}
