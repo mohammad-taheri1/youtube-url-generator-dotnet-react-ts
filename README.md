@@ -1,8 +1,8 @@
 # Url Generator
 
-## TouTube Tutorila
+## YouTube Tutorial
     
-    https://www.youtube.com/watch?v=M6TOddZ0GhI
+https://www.youtube.com/watch?v=M6TOddZ0GhI
 
 ## Solution Technologies
 
@@ -10,6 +10,7 @@
 * React 18
 * TypeScript
 * MS SQL SERVER
+* Entity Framework Core
 
 ## Solution Architecture
 
