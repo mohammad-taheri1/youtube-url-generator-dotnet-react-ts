@@ -1,5 +1,9 @@
 # Url Generator
 
+## TouTube Tutorila
+    
+    https://www.youtube.com/watch?v=M6TOddZ0GhI
+
 ## Solution Technologies
 
 * Asp.Net Core (.NET 7.0)
@@ -9,4 +13,4 @@
 
 ## Solution Architecture
 
-<img src="./shot.png" />
+<img src="./banner.jpg" />
