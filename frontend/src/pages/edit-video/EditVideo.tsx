@@ -21,7 +21,7 @@ const EditVideo = () => {
             setLoading(false);
          })
          .catch((error) => alert("ERror Ocuured"));
-   }, []);
+   }, [videoId]);
 
    const handleClickSaveBtn = () => {
       if (title === "") {

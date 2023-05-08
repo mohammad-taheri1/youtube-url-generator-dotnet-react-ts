@@ -1,10 +1,9 @@
 import "./delete-video.scss";
-import { TextField, Button } from "@mui/material";
-import { useState, useEffect } from "react";
+import {  Button } from "@mui/material";
+import { useState } from "react";
 import { useNavigate, useParams } from "react-router-dom";
 import axios from "axios";
 import { baseUrl } from "../../constants/url.constant";
-import { IVidoe } from "../../types/global.typing";
 
 const DeleteVideo = () => {
    const [loading, setLoading] = useState<boolean>(false);

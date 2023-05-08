@@ -37,6 +37,7 @@
          padding: 0.6rem 1.2rem;
          width: 100%;
          border-radius: 32px;
+         overflow: hidden;
 
          .left {
             .time {
@@ -67,5 +68,12 @@
             }
          }
       }
+   }
+}
+
+@media (max-width: 480px) {
+   .home .cards .card {
+      @include d-flex(column, center, center);
+      gap: 1rem;
    }
 }

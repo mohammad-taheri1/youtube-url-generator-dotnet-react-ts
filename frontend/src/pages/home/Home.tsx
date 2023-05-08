@@ -9,13 +9,16 @@ import { useNavigate } from "react-router-dom";
 
 const Home = () => {
    const [videos, setVideos] = useState<IVidoe[]>([]);
+   const [loading, setLoading] = useState<boolean>(false);
    const redirect = useNavigate();
 
    useEffect(() => {
+      setLoading(true);
       axios
          .get<IVidoe[]>(baseUrl)
          .then((response) => setVideos(response.data))
-         .catch((error) => alert(JSON.stringify(error)));
+         .catch((error) => alert(JSON.stringify(error)))
+         .finally(() => setLoading(false));
    }, []);
 
    //  console.log(videos);
@@ -40,7 +43,8 @@ const Home = () => {
 
          {/* Videos List */}
          <div className="cards">
-            {videos.length === 0 && <h1 className="no-video">No Videos Yet...</h1>}
+            {loading && <h1>Loading...</h1>}
+            {!loading && videos.length === 0 && <h1 className="no-video">No Videos Yet...</h1>}
             {videos.map((item) => (
                <div key={item.id} className="card">
                   <div className="left">
